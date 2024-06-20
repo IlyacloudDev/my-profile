@@ -1,4 +1,52 @@
-.header{
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
 	width: 100%;
-	background: #ae84cf;
+	background: #039999;
+	height: 85px;
+	transition: 1s linear;
+}
+
+
+header:hover{
+    color: #fff;
+    background: #1673de
+}
+
+
+#h1_my_hobby{
+    padding-left: 60px;
+    padding-top: 20px;
+    color: #fff;
+    font-family:  Comic Sans MS, Comic Sans, cursive
+}
+
+
+.change-color-link{
+    color: #ccdbed;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+
+.change-color-link:hover{
+    color: #c2c2c2;
+}
+
+
+.ul1{
+    float: right;
+    font-family:  Comic Sans MS, Comic Sans, cursive;
+}
+
+
+.ul1 li{
+    height: 100%
+    margin: 0px;
+    display: inline;
 }
