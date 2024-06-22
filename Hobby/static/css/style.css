@@ -1,52 +1,53 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-
-header{
-	width: 100%;
-	background: #039999;
-	height: 85px;
-	transition: 1s linear;
+header {
+    width: 100%;
+    background: #039999;
+    height: 85px;
+    transition: 1s linear;
+    position: relative;
 }
 
-
-header:hover{
+header:hover {
     color: #fff;
-    background: #1673de
+    background: #1673de;
 }
 
-
-#h1_my_hobby{
+#h1_my_hobby {
     padding-left: 60px;
     padding-top: 20px;
     color: #fff;
-    font-family:  Comic Sans MS, Comic Sans, cursive
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    width: 200px;
 }
 
-
-.change-color-link{
-    color: #ccdbed;
+.change-color-link {
+    color: #fff;
     text-decoration: none;
     -webkit-transition: all 1s ease;
-            transition: all 1s ease;
+    transition: all 1s ease;
 }
 
-
-.change-color-link:hover{
+.change-color-link:hover {
     color: #c2c2c2;
 }
 
-
-.ul1{
+.ul1 {
     float: right;
-    font-family:  Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 400px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-
-.ul1 li{
-    height: 100%
+.ul1 li {
+    height: 100%;
     margin: 0px;
     display: inline;
 }
