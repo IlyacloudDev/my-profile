@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+
+/* СТИЛИ ДЛЯ ХЕДЕРА */
 header {
     width: 100%;
     background: #039999;
@@ -11,12 +13,14 @@ header {
     position: relative;
 }
 
+
 #h1_my_hobby {
     padding-left: 90px;
     padding-top: 20px;
     color: #fff;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
+
 
 .change-color-link {
     color: #fff;
@@ -25,9 +29,11 @@ header {
     transition: all 1s ease;
 }
 
+
 .change-color-link:hover {
     color: #bffff0;
 }
+
 
 .change-color-link-hobby {
     color: #fff;
@@ -36,9 +42,11 @@ header {
     transition: all 1s ease;
 }
 
+
 .change-color-link-hobby:hover {
     color: #bffff0;
 }
+
 
 .ul1 {
     margin-left: 650px;
@@ -52,12 +60,15 @@ header {
     transform: translateY(-50%);
 }
 
+
 .ul1 li {
     height: 100%;
     margin: 0px;
     display: inline;
 }
 
+
+/* СТИЛИ ДЛЯ СТРАНИЧКИ "Обо мне" */
 #my_profile_photo {
     margin-left: 60px;
     margin-top: 30px;
@@ -65,21 +76,27 @@ header {
     border: 10px solid white;
 }
 
+
 .p_text {
     margin-top: 35px;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+
 .profile_style_text {
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+
+/* СТИЛИ ДЛЯ ССЫЛОК (распространяются на все странички) */
 .underline-one {
-	color: #75c7b4; /* Цвет обычной ссылки */
+	color: #75c7b4;
     position: relative;
     cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
 }
+
+
 .underline-one:after {
 	content: "";
     display: block;
@@ -91,6 +108,7 @@ header {
     background-color: black;
     transition: width 0.5s;
 }
+
 
 .underline-one:hover:after {
 	content: "";
@@ -104,6 +122,8 @@ header {
     transition: width 0.5s;
 }
 
+
+/* СТИЛИ ДЛЯ СТРАНИЧКИ "Моё хобби" */
 #my_hobby_photo {
     margin-right: 60px;
     margin-top: 30px;
@@ -111,13 +131,217 @@ header {
     border: 10px solid white;
 }
 
+
 .p_hobby_text {
     margin-top: 35px;
     margin-left: 20px;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+
 .hobby_style_text {
     margin-left: 20px;
     font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+/* СТИЛИ ДЛЯ СТРАНИЧКИ "Обратная связь" */
+.contacts_photo {
+    padding-top: 10px;
+    padding-left: 10px;
+    transition: transform .2s;
+}
+
+
+.contacts_photo:hover {
+    transform: scale(1.2);
+}
+
+
+.p_contact_text {
+    padding-top: 35px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+.p_contact_style_text {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+/* СТИЛИ ДЛЯ СТРАНИЧКИ "Главная" */
+#main_position {
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+
+.p_main_style_text {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+*, *:after, *:before {
+	border-box;
+	box-sizing: border-box;
+}
+
+
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+
+
+.clearfix:after {
+	clear: both;
+}
+
+
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+
+
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+
+
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+
+
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+figure.effect-text-three {
+	background: #527c82;
+}
+
+
+figure.effect-text-three img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+
+
+figure.effect-text-three h3 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+
+figure.effect-text-three:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+figure.effect-text-three p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+
+figure.effect-text-three:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
