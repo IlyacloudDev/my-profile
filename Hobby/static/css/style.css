@@ -11,17 +11,11 @@ header {
     position: relative;
 }
 
-header:hover {
-    color: #fff;
-    background: #1673de;
-}
-
 #h1_my_hobby {
-    padding-left: 60px;
+    padding-left: 90px;
     padding-top: 20px;
     color: #fff;
     font-family: Comic Sans MS, Comic Sans, cursive;
-    width: 200px;
 }
 
 .change-color-link {
@@ -32,10 +26,22 @@ header:hover {
 }
 
 .change-color-link:hover {
-    color: #c2c2c2;
+    color: #bffff0;
+}
+
+.change-color-link-hobby {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.change-color-link-hobby:hover {
+    color: #bffff0;
 }
 
 .ul1 {
+    margin-left: 650px;
     float: right;
     font-family: Comic Sans MS, Comic Sans, cursive;
     display: flex;
@@ -50,4 +56,68 @@ header:hover {
     height: 100%;
     margin: 0px;
     display: inline;
+}
+
+#my_profile_photo {
+    margin-left: 60px;
+    margin-top: 30px;
+    height: 455px;
+    border: 10px solid white;
+}
+
+.p_text {
+    margin-top: 35px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.profile_style_text {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.underline-one {
+	color: #75c7b4; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #75c7b4;
+    transition: width 0.5s;
+}
+
+#my_hobby_photo {
+    margin-right: 60px;
+    margin-top: 30px;
+    height: 500px;
+    border: 10px solid white;
+}
+
+.p_hobby_text {
+    margin-top: 35px;
+    margin-left: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.hobby_style_text {
+    margin-left: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
