@@ -1,4 +1,14 @@
 {% extends 'default.html' %}
+{% load static %}
 
 {% block content %}
+    <div align="center">
+        <h1 class="p_contact_text">Write to me, I will be glad to meet you!</h1>
+    </div>
+    <div align="center">
+        <a href="https://instagram.com/https://www.instagram.com/outofgameperson"><img class="contacts_photo" src="{% static 'img/icons8-instagram-50.png' %}" alt="My profile photo"></a>
+        <a href="https://wa.me/79683542620"><img class="contacts_photo" src="{% static 'img/icons8-whatsapp-50.png' %}" alt="My profile photo"></a>
+        <a href="https://vk.com/affterallthisttime"><img class="contacts_photo" src="{% static 'img/icons8-вконтакте-50.png' %}" alt="My profile photo"></a>
+        <a href="https://t.me/theemptinessoflifesuppresses"><img class="contacts_photo" src="{% static 'img/icons8-телеграм-50.png' %}" alt="My profile photo"></a>
+    </div>
 {% endblock content %}
