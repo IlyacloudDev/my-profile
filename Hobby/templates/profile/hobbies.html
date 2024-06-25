@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'default.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+    <img id="my_hobby_photo" src="{% static 'img/160419o4r5q1h3j4x5y1l3p8o950317o410.jpg' %}" alt="My profile photo" align="right" border="8px; #fff">
+    <h2 class="p_hobby_text">Одно из моих основных хобби - <a href="https://youtu.be/etG4SszML5c?si=rA_04rDOmYabdoAW">Кендама</a>.</h2>
+    <br>
+    <h3 class="hobby_style_text">•За всё время у нас в России было разработано несколько своих брендов этой игрушки;</h3>
+<h3 class="hobby_style_text">•У нас есть своя <a href="https://t.me/mechimyach">Тг группа</a>, рады всем;</h3>
+    <h2 class="p_hobby_text">Один раз, выполнение одной связки с трюками заняло у меня неделю.</h2>
+    <br>
+<h3 class="hobby_style_text">•C 2018 года являюсь частью комьюнити по <a href="https://youtu.be/KIYccDD_7Rs?si=addbYt4d5VtR6KAU" class="underline-one">кендаме</a> в России;</h3>
+    <h3 class="hobby_style_text">•Катаюсь на сноуборде;</h3>
+{% endblock content %}
