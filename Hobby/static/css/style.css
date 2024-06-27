@@ -5,20 +5,80 @@
 
 
 /* СТИЛИ ДЛЯ ХЕДЕРА */
+/* Базовые стили (для больших экранов) */
 header {
     width: 100%;
     background: #039999;
     height: 85px;
     transition: 1s linear;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* добавим отступы */
 }
 
-
 #h1_my_hobby {
-    padding-left: 90px;
-    padding-top: 20px;
+    padding: 0;
     color: #fff;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    flex-shrink: 0; /* Предотвращаем сжатие заголовка */
+}
+
+.ul1 {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.ul1 li {
+    display: inline;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/* Медиа-запросы для меньших экранов */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .ul1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .ul1 li {
+        margin: 0;
+    }
+
+    #h1_my_hobby {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .ul1 {
+        align-items: center;
+        width: 100%;
+    }
+
+    .ul1 li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #h1_my_hobby {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 
@@ -45,26 +105,6 @@ header {
 
 .change-color-link-hobby:hover {
     color: #bffff0;
-}
-
-
-.ul1 {
-    margin-left: 650px;
-    float: right;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    left: 400px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-.ul1 li {
-    height: 100%;
-    margin: 0px;
-    display: inline;
 }
 
 
